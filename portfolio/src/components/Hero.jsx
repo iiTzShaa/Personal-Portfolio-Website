@@ -22,7 +22,7 @@ const Hero = () => {
         "a Software Developer &#128187;",
         "a Computer Science Student &#127891;",
         "a problem solver who enjoys solving complex problems &#129504;",
-        "Passionate about Cloud Engineering, DevOps, and Backend Development &#9728;&#65039;&#8205;&#128187;",
+        "Passionate about Cloud Engineering, DevOps, and Backend Development \u{2601}\u{FE0F}\u{200D}\u{1F4BB}",
         "Powered by coffee and code &#9749;&#65039;&#8205;&#128187;"
     ]}
     typeSpeed={50}          
