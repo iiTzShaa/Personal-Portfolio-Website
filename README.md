@@ -14,19 +14,6 @@ Tailwind CSS for styling
 Framer Motion for animations
 Email Service: Email.js
 Icons: React Icons
-📁 Project Structure
-plaintext
-Copy code
-src/
-│-- assets/            # Images, logos, and other static assets
-│-- components/        # Reusable components (Navbar, ContactForm, etc.)
-│-- constants/         # Static data (Education, Experience, Bio, etc.)
-│-- pages/             # Main pages for the portfolio
-│-- App.jsx            # Main App component
-│-- main.jsx           # React entry point
-└-- index.html         # HTML template
-🎨 Features
-Responsive Design
 
 Optimized for all devices: Desktop, Tablet, and Mobile.
 Smooth Animations
