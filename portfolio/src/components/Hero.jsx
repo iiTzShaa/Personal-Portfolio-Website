@@ -18,21 +18,21 @@ const Hero = () => {
         </h2>
         <span className="inline text-3xl tracking-tighter lg:text-4xl">I'm </span>
         <ReactTyped
-        strings={[
-            "a Software Developer 👨‍💻",
-            "a Computer Science Student 🎓",
-            "a problem solver who enjoys solving complex problems 🧠",
-            "Passionate about Cloud Engineering, DevOps, and Backend Development ☁️💻",
-            "Powered by coffee and code ☕💻"
-        ]}  
-        typeSpeed={50}          
-        backSpeed={30}           
-        backDelay={1000}         
-        startDelay={500}         
-        loop={true}            
-        showCursor={true}       
-        className="inline text-3xl tracking-tighter lg:text-4xl" 
-        />
+    strings={[
+        "a Software Developer &#128187;",
+        "a Computer Science Student &#127891;",
+        "a problem solver who enjoys solving complex problems &#129504;",
+        "Passionate about Cloud Engineering, DevOps, and Backend Development &#9728;&#65039;&#8205;&#128187;",
+        "Powered by coffee and code &#9749;&#65039;&#8205;&#128187;"
+    ]}
+    typeSpeed={50}          
+    backSpeed={30}           
+    backDelay={1000}         
+    startDelay={500}         
+    loop={true}            
+    showCursor={true}       
+    className="inline text-3xl tracking-tighter lg:text-4xl" 
+/>
 
 
         

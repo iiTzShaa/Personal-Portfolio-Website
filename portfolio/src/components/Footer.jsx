@@ -26,7 +26,7 @@ export const Footer = () => {
         </div>
         <p className="mt-8 text-center text text-sm tracking-wide
         text-gray-400">
-            &copy:compileTab. All rights reserved
+             All rights reserved @Sharon Shimon
         </p>
     </div>
   )

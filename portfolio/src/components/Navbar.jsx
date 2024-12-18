@@ -31,11 +31,11 @@ function Navbar() {
     <div>
       <nav className="fixed left-0 right-0 top-4 z-50 w-full">
         {/* Desktop Menu */}
-        <div className="max-auto hidden lg:flex justify-center items-center max-w-2xl mx-auto bg-black/30 backdrop-blur-md py-2 rounded-lg border-2 border-gray-400"> {/* Reduced padding */}
-          <div className="flex justify-between items-center w-full px-4"> {/* Reduced padding */}
+        <div className="max-auto hidden lg:flex justify-center items-center max-w-2xl mx-auto bg-black/30 py-2 rounded-lg border-2 border-gray-400">
+          <div className="flex justify-between items-center w-full px-4">
             <div className="flex justify-start">
               <a href="#">
-                <img src={logo} width={100} alt="logo" /> {/* Smaller logo */}
+                <img src={logo} width={100} alt="logo" />
               </a>
             </div>
             <div className="flex justify-center flex-grow">
@@ -53,18 +53,15 @@ function Navbar() {
                 ))}
               </ul>
             </div>
-            <div className="flex justify-end">
-              {/* Empty space or other elements can go here */}
-            </div>
           </div>
         </div>
 
         {/* Mobile Menu */}
-        <div className="lg:hidden rounded-lg backdrop-blur-md mb-12 border-2 border-gray-400"> {/* Reduced bottom margin */}
-          <div className="flex items-center justify-between py-2"> {/* Reduced padding */}
+        <div className="lg:hidden">
+          <div className="flex items-center justify-between py-2">
             <div>
               <a href="#">
-                <img src={logo} width={80} alt="logo" className="m-2" /> {/* Smaller logo */}
+                <img src={logo} width={80} alt="logo" className="m-2" />
               </a>
             </div>
             <div className="flex items-center">
@@ -81,11 +78,13 @@ function Navbar() {
             </div>
           </div>
           {isMobileMenuOpen && (
-            <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
+            <ul
+              className="absolute top-full left-0 right-0 bg-black/20 rounded-b-lg p-4 mt-1 flex flex-col gap-4"
+            >
               {NAVIGATION_LINKS.map((item, index) => (
                 <li key={index}>
                   <a
-                    className="block w-full text-lg"
+                    className="block text-white text-lg hover:text-yellow-400"
                     href={item.href}
                     onClick={(e) => handleLinkClick(e, item.href)}
                   >
