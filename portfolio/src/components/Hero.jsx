@@ -14,15 +14,16 @@ const Hero = () => {
         className="w-full md:w-1/2 text-center md:text-left">
         <h2 className="my-8 p-2 text-4xl font-bold md:text-5xl mt-20 lg:text-[7rem] text-gray-800 shadow-lg">
            Hey there 👋 
-          <span className="block text-blue-600">{`I'm ${HERO.name}`}</span>
+           I'm 
+          <span className="block text-blue-600">{` ${HERO.name}`}</span>
         </h2>
         <span className="inline text-3xl tracking-tighter lg:text-4xl">I'm </span>
         <ReactTyped
     strings={[
         "a Software Developer &#128187;",
         "a Computer Science Student &#127891;",
-        "a problem solver who enjoys solving complex problems &#129504;",
-        "Passionate about Cloud Engineering, DevOps, and Backend Development \u{2601}\u{FE0F}\u{200D}\u{1F4BB}",
+        "a problem solver  &#129504;",
+        "Passionate about Cloud , DevOps, and Backend Development \u{2601}\u{FE0F}\u{200D}\u{1F4BB}",
         "Powered by coffee and code &#9749;&#65039;&#8205;&#128187;"
     ]}
     typeSpeed={50}          

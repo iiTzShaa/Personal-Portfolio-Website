@@ -40,8 +40,8 @@ export const NAVIGATION_LINKS = [
   { label: "Projects", href: "#projects" },
   { label: "Bio", href: "#bio" },
   { label: "Skills", href: "#skills" },
-  { label: "Work Experience", href: "#work" },
   { label: "Education", href: "#education" },
+  { label: "Work Experience", href: "#work" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -49,8 +49,9 @@ export const HERO = {
   name: "SHARON SHIMON",
   greet: "Hello there! 👋🏻",
   description:
-  "I’m a passionate software developer and computer science student with a love for solving complex problems. I thrive on creating efficient solutions, diving into DevOps, and exploring the latest in cloud engineering and backend development. When I’m not coding, I’m probably debugging my life choices!"
+    "Software developer and computer science student passionate about DevOps, cloud engineering, backend development, and exploring new technology. Turning ideas into impact, one line of code at a time. Currently seeking exciting opportunities to grow and contribute!"
 };
+
 
 export const PROJECTS = [
   {
@@ -105,12 +106,13 @@ export const PROJECTS = [
 
 
 export const BIO = [
-  "I’m Sharon Shimon, a 3rd-year Computer Science student at the Holon Institute of Technology (HIT). I’m passionate about machine learning, data science, software engineering, and DevOps, and I thrive on projects that challenge me to think analytically and find practical solutions.",
-  "In 2023, I dove into full-stack web development, DevOps, and machine learning. I’ve worked with technologies like Node.js, React, Kubernetes, and AWS, and I’ve gained hands-on experience with Docker, CI/CD pipelines, and cloud infrastructure. My goal? To build scalable, efficient systems that make an impact.",
-  "As a multi-disciplinary software engineer, I’m constantly learning and growing. Whether it’s fine-tuning backend systems or automating DevOps processes, I bring a versatile skill set to every project. From Python and JavaScript to TypeScript and Kubernetes, I’m ready to tackle anything that comes my way.",
-  "I’m actively looking for opportunities to level up my career, secure an internship, and dive into real-world software engineering, DevOps, or cloud computing projects. I’m also open to collaborating on exciting machine learning or backend development projects that push boundaries.",
-  "If you want someone who’s passionate, driven, and always up for a challenge, let’s talk. I’m ready to make an impact—and have some fun while doing it!"
+  "I'm Sharon Shimon, a 3rd-year Computer Science student at HIT with a passion for machine learning, data science, software engineering, and DevOps. I love tackling complex problems and building practical solutions.",
+  "In 2023, I dove into full-stack web development, DevOps, and machine learning, working with Node.js, React, Kubernetes, AWS, Docker, and CI/CD pipelines. My goal is to create scalable, efficient systems that make an impact.",
+  "A versatile software engineer, I constantly learn and adapt. From Python to TypeScript, and backend systems to DevOps automation, I’m ready for any challenge.",
+  "I’m seeking opportunities to grow my career, secure an internship, and work on real-world software engineering, DevOps, or cloud projects. I’m also open to collaborating on machine learning or backend development projects.",
+  "If you're looking for someone passionate and driven, let’s connect—I'm ready to make an impact!"
 ];
+
 
 export const SKILLS = [
   {

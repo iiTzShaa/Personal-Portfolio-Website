@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa'; // Importing the icons
 import logo from '../assets/logo.png';
 import { NAVIGATION_LINKS } from '../constants';
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const mobileMenuRef = useRef(null); // Reference to the mobile menu
 
   const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileMenuOpen(!isMobileMenuOpen); // Toggle the menu open/close state
   };
 
   const handleLinkClick = (e, href) => {
@@ -26,6 +27,23 @@ function Navbar() {
 
     setIsMobileMenuOpen(false); // Close mobile menu after link click
   };
+
+  // Close the mobile menu when clicking outside of it
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(e.target) && isMobileMenuOpen) {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    // Add event listener
+    document.addEventListener('mousedown', handleClickOutside);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <div>
@@ -59,40 +77,52 @@ function Navbar() {
         {/* Mobile Menu */}
         <div className="lg:hidden">
           <div className="flex items-center justify-between py-2">
-            <div>
-              <a href="#">
-                <img src={logo} width={80} alt="logo" className="m-2" />
-              </a>
-            </div>
+            {/* Menu button on the left */}
             <div className="flex items-center">
               <button
                 className="focus:outline-none"
                 onClick={toggleMobileMenu}
               >
                 {isMobileMenuOpen ? (
-                  <FaTimes className="m-2 h-6 w-5" />
+                  <FaTimes className="m-2 h-6 w-5 text-white" />
                 ) : (
-                  <FaBars className="m-2 h-6 w-5" />
+                  <FaBars className="m-2 h-6 w-5 text-white" />
                 )}
               </button>
             </div>
+
+            {/* Logo on the right */}
+            <div className="ml-auto">
+              {!isMobileMenuOpen && (
+                <a href="#">
+                  <img src={logo} width={80} alt="logo" className="m-2" />
+                </a>
+              )}
+            </div>
           </div>
+
+          {/* Show the menu when it is open */}
           {isMobileMenuOpen && (
-            <ul
-              className="absolute top-full left-0 right-0 bg-black/20 rounded-b-lg p-4 mt-1 flex flex-col gap-4"
+            <div
+              className="absolute top-0 left-0 right-0 bottom-0 bg-black/50 backdrop-blur-sm z-40"
+              ref={mobileMenuRef} // Attach the ref to the mobile menu container
             >
-              {NAVIGATION_LINKS.map((item, index) => (
-                <li key={index}>
-                  <a
-                    className="block text-white text-lg hover:text-yellow-400"
-                    href={item.href}
-                    onClick={(e) => handleLinkClick(e, item.href)}
-                  >
-                    {item.label}
-                  </a>
-                </li>
-              ))}
-            </ul>
+              <ul
+                className="absolute top-full left-0 right-0 bg-black/70 rounded-b-lg p-4 mt-1 flex flex-col gap-4"
+              >
+                {NAVIGATION_LINKS.map((item, index) => (
+                  <li key={index}>
+                    <a
+                      className="block text-white text-lg hover:text-yellow-400"
+                      href={item.href}
+                      onClick={(e) => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
         </div>
       </nav>
