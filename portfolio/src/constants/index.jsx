@@ -20,7 +20,7 @@ import { FaNodeJs } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { SiPython } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
-import { SiTypescript } from "react-icons/si";
+import { SiCplusplus } from "react-icons/si";
 import { DiJava  } from "react-icons/di";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
@@ -140,8 +140,9 @@ export const SKILLS = [
     name: "JavaScript",
   },
   {
-    icon: <SiTypescript className="text-4xl text-blue-600 lg:text-5xl" />, // TypeScript icon
-    name: "TypeScript",
+    icon: <SiCplusplus 
+ className="text-4xl text-blue-600 lg:text-5xl" />, // TypeScript icon
+    name: "C++",
   },
   {
     icon: <DiJava  className="text-4xl text-red-600 lg:text-5xl" />, // Java icon
