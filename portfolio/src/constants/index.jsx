@@ -49,8 +49,7 @@ export const HERO = {
   name: "SHARON SHIMON",
   greet: "Hello there! 👋🏻",
   description:
-    "Software developer and computer science student passionate about DevOps, cloud engineering, backend development, and exploring new technology. Turning ideas into impact, one line of code at a time. Currently seeking exciting opportunities to grow and contribute!"
-};
+"I'm Sharon Shimon, a 3rd-year Computer Science student at HIT passionate about backend development, specializing in scalable applications and APIs using Python, Node.js, Docker, Kubernetes, and AWS, eager to grow as a backend developer and work on impactful projects."};
 
 
 export const PROJECTS = [
@@ -106,11 +105,11 @@ export const PROJECTS = [
 
 
 export const BIO = [
-  "I'm Sharon Shimon, a 3rd-year Computer Science student at HIT with a passion for machine learning, data science, software engineering, and DevOps. I love tackling complex problems and building practical solutions.",
-  "In 2023, I dove into full-stack web development, DevOps, and machine learning, working with Node.js, React, Kubernetes, AWS, Docker, and CI/CD pipelines. My goal is to create scalable, efficient systems that make an impact.",
-  "A versatile software engineer, I constantly learn and adapt. From Python to TypeScript, and backend systems to DevOps automation, I’m ready for any challenge.",
-  "I’m seeking opportunities to grow my career, secure an internship, and work on real-world software engineering, DevOps, or cloud projects. I’m also open to collaborating on machine learning or backend development projects.",
-  "If you're looking for someone passionate and driven, let’s connect—I'm ready to make an impact!"
+  "I'm Sharon Shimon, a 3rd-year Computer Science student at HIT with a passion for backend development and software engineering.",
+  "I specialize in building scalable, high-performance applications and solving complex problems.",
+  "In 2023, I worked with Python, Node.js, Docker, Kubernetes, and AWS to design efficient architectures and develop robust APIs.",
+  "I’m eager to grow as a backend developer and work on real-world software engineering projects.",
+  "Let’s connect if you’re looking for someone passionate about building reliable backend solutions!"
 ];
 
 
@@ -232,7 +231,7 @@ export const EDUCATION = [
     institution: "Holon Institute of Technology (HIT)",
     duration: "Expected Graduation: November 2025",
     description:
-      "Pursuing a B.Sc. in Computer Science with a focus on software engineering, DevOps, and cloud computing. Engaged in projects involving full-stack development, machine learning, and system optimization.",
+    "Pursuing a B.Sc. in Computer Science with a focus on backend development, software engineering, and cloud computing. Engaged in projects involving Node.js, APIs, and system optimization."
   },
   {
     degree: "Practical Electronics Engineer",
